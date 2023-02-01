@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.barramenu { 
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+background-color: #336AB0;
+width: 100%;
+height: 50px;
+margin-top: 0px;
+animation-name: introdifuminado;
+animation-duration: 2s;
+}
+
+
+
+ul {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  text-align: left;
+  overflow: hidden;
+  }
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: 0px solid #336AB0;
+  transition-property: border-bottom;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+/* cambia forma de boton menu */
+li a:hover {
+  border-bottom: 2px solid white;
+   
+}
+
+@keyframes introdifuminado {
+  from {filter: blur(1.5rem);}
+  to {filter: blur(0);}
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+}
