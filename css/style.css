@@ -1,7 +1,23 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
 }
+
+.imagenicon{
+  width: 50px;
+  height: 50px;
+  float: left; 
+  padding-right: 10px;
+}
+
+
+.texticon{  
+  
+  color: #236CC4;
+ 
+  }
 
 .barramenu { 
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -12,6 +28,38 @@ margin-top: 0px;
 animation-name: introdifuminado;
 animation-duration: 2s;
 }
+
+
+.ventanatexto{  
+
+font-family: 'Roboto', sans-serif;
+font-size: 33px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #236CC4;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+
+
+.ventana { 
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  animation-name: estiramiento;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  width: 100%;
+  height: 670px;
+  margin-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 25px;
+  
+  }
 
 
 
@@ -51,9 +99,20 @@ li a:hover {
   to {filter: blur(0);}
 }
 
+@keyframes estiramiento {
+  from {width: 0%;}
+  to {width: 100%;}
+}
+
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
+
+  .ventana {
+    height: auto; 
+  }
+
 
 }
