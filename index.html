@@ -32,27 +32,35 @@
   </div>
   --> 
 
-<!-- Este es la barra de menu --> 
 
+
+
+<!--barra menu responsiva-->
 <div class="barramenu">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li> <a href="#Intro"> Introdución </a> </li>
-        <li> <a href="#DatosPersonales"> Datos Personales </a> </li>
-        <li> <a href="#HistorialAcademico"> Preparacion Academica </a> </li>
-        <li>  <a href="#Habilidades"> Habilidades </a> </li>
-        <li> <a href="#"> Historial Experiencia Laboral </a> </li> 
-      </ul>
-     
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#Intro">Introdución</a>
+
+
+        <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> 
+        <a class="nav-link" href="#HistorialAcademico"> Preparacion Academica </a>
+        <a class="nav-link" href="#Habilidades"> Habilidades </a> 
+        <a class="nav-link" href="#"> Historial Experiencia Laboral </a>  
+
+        
+      </div>
     </div>
-  </nav>
+  </div>
+</nav>
 </div>
+
+
 
 <!-- ======= Intro ======= -->
 <a name="Intro" />
@@ -61,13 +69,16 @@
     
     <div class="row">
       
-      <div class="col" >
+      <div class="col-lg-6 col-10 order-lg-2 order-2 " >
         <h4>
         Haciendo una descripción sencilla soy una persona activa, emprendedora, responsable, orientada al logro de resultados y a la resolución en las tareas asignadas.
           
         </h4>
       </div>
-
+      
+      <div class="col-lg-4 col-10 order-lg-2 order-1">
+        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
+      </div>
       
       
     </div>
