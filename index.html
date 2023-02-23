@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     
     <title>CV</title>
 
@@ -37,21 +38,23 @@
 
 <!--barra menu responsiva-->
 <div class="barramenu">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="barra">
   <div class="container-fluid">
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <button type="button" class="btn btn-primary" id="boton"><i class="bi bi-moon"></i></button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#Intro">Introdución</a>
-
-
-        <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> 
-        <a class="nav-link" href="#HistorialAcademico"> Preparacion Academica </a>
-        <a class="nav-link" href="#Habilidades"> Habilidades </a> 
-        <a class="nav-link" href="#"> Historial Experiencia Laboral </a>  
+        
+          <li>   <a class="nav-link active" aria-current="page" href="#Intro">Introdución</a>          </li>
+          <li> <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> </li>
+            <li> <a class="nav-link" href="#HistorialAcademico"> Preparacion Academica </a></li>
+              <li>  <a class="nav-link" href="#Habilidades"> Habilidades </a> </li>
+                <li> <a class="nav-link" href="#"> Historial Experiencia Laboral </a>  </li>
+        
+                     
 
         
       </div>
@@ -64,20 +67,19 @@
 
 <!-- ======= Intro ======= -->
 <a name="Intro" />
-<div class="ventana">
+<div class="ventana2">
   <div class="container">
     
     <div class="row">
       
       <div class="col-lg-6 col-10 order-lg-2 order-2 " >
-        <h4>
-        Haciendo una descripción sencilla soy una persona activa, emprendedora, responsable, orientada al logro de resultados y a la resolución en las tareas asignadas.
-          
-        </h4>
+        
+        <p class="textointro">Haciendo una descripción sencilla soy una persona activa, emprendedora, responsable, orientada al logro de resultados y a la resolución en las tareas asignadas.</p>
+        
       </div>
       
-      <div class="col-lg-4 col-10 order-lg-2 order-1">
-        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
+      <div class="col-lg-4 col-10 order-lg-2 order-1 text-center align-middle">
+        <img class="imagenperson" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
       </div>
       
       
@@ -105,10 +107,10 @@
 </div>
 
 <!-- ======= Historial Academico ======= -->
-<a name="HistorialAcademico" />
-<div class="ventana">
+<a name="HistorialAcademico" >
+<div class="ventana2">
   <section class="container">
-  <p class="ventanatexto">Historial Academico </p>
+  <p class="ventanatexto2">Historial Academico </p>
   <div class="row">
     <div class="col-sm">
       <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
@@ -126,7 +128,7 @@
 
 
 <!-- ======= Habilidades ======= -->
-<a name="Habilidades" />
+<a name="Habilidades" >
 <div class="ventana">
 <section class="container">
 
@@ -179,6 +181,7 @@
 
 </div>
 
+<script src="js/funciones.js" ></script>
 
 </body>
 </html>

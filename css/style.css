@@ -5,12 +5,34 @@ body {
   
 }
 
+
+.textointro{
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
 .imagenicon{
   width: 50px;
   height: 50px;
   float: left; 
   padding-right: 10px;
 }
+
+.imagenperson{
+  width: 500px;
+  height: 500px;
+  float: center; 
+  padding-right: 10px;
+  animation-name: burbujaimg;
+  animation-duration: 2s;
+  place-items: center;
+
+  
+}
+
 
 
 .texticon{  
@@ -23,7 +45,7 @@ body {
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 background-color: #336AB0;
 width: 100%;
-height: 50px;
+height: 30px;
 margin-top: 0px;
 animation-name: introdifuminado;
 animation-duration: 2s;
@@ -45,6 +67,68 @@ text-transform: none;
 }
 
 
+.ventanatexto2{  
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 33px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  }
+
+.ventana2 { 
+  box-shadow:inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  background-color: #0065fc;
+opacity: 1;
+background-image:  linear-gradient(135deg, #0d6efd 25%, transparent 25%), linear-gradient(225deg, #0d6efd 25%, transparent 25%), linear-gradient(45deg, #0d6efd 25%, transparent 25%), linear-gradient(315deg, #0d6efd 25%, #0065fc 25%);
+background-position:  4px 0, 4px 0, 0 0, 0 0;
+background-size: 4px 4px;
+background-repeat: repeat;
+  
+  
+  width: 100%;
+  height: 750px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  
+  border-radius: 0px;
+  color: white;
+  }
+
+
+  .ventana3 { 
+    box-shadow:inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    background-color: #1c1c1c;
+opacity: 1;
+background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #1c1c1c 25%);
+background-position:  4px 0, 4px 0, 0 0, 0 0;
+background-size: 4px 4px;
+background-repeat: repeat;
+    
+    
+    width: 100%;
+    height: 750px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    
+    border-radius: 0px;
+    color: white;
+    }
+  
+
 
 .ventana { 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -53,11 +137,12 @@ text-transform: none;
   animation-duration: 2s;
   animation-delay: 1s;
   width: 100%;
-  height: 670px;
-  margin-top: 25px;
+  height: 750px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-radius: 25px;
+  border-radius: 0px;
   
   }
 
@@ -90,7 +175,7 @@ li a {
 
 /* cambia forma de boton menu */
 li a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 4px solid white;
    
 }
 
@@ -104,6 +189,12 @@ li a:hover {
   to {width: 100%;}
 }
 
+@keyframes burbujaimg {
+  
+  from { opacity: 0%;}
+  to {opacity: 100%;}
+}
+
 
 @media only screen and (max-width: 600px) {
   body {
@@ -112,6 +203,26 @@ li a:hover {
 
   .ventana {
     height: auto; 
+  }
+
+  .ventana2 {
+    height: auto; 
+  }
+
+  .imagenperson{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+
+    
+  }
+
+  .textointro{
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
   }
 
 
