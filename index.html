@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Warp&display=swap" rel="stylesheet">
+   
     
     <title>CV</title>
 
@@ -31,6 +35,10 @@
     <li> <a href="#"> Historial Experiencia Laboral </a> </li> 
   </ul>
   </div>
+  boton de modo obscuro
+
+<button type="button" class="btn btn-primary" id="boton"><i class="bi bi-moon" id="botonmodo"></i></button>
+
   --> 
 
 
@@ -38,47 +46,52 @@
 
 <!--barra menu responsiva-->
 <div class="barramenu">
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="barra">
-  <div class="container-fluid">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <button type="button" class="btn btn-primary" id="boton"><i class="bi bi-moon" id="botonmodo"></i></button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        
-          <li>   <a class="nav-link active" aria-current="page" href="#Intro">Introdución</a>          </li>
-          <li> <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> </li>
-            <li> <a class="nav-link" href="#HistorialAcademico"> Preparacion Academica </a></li>
-              <li>  <a class="nav-link" href="#Habilidades"> Habilidades </a> </li>
-                <li> <a class="nav-link" href="#"> Historial Experiencia Laboral </a>  </li>
-        
-                     
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="barra">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      
+      
+        <div class="navbar-nav">
+          
+            <li> <a class="nav-link active" aria-current="page" href="#Intro">Introdución</a>          </li>
+            <li> <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> </li>
+            <li> <a class="nav-link" href="#Habilidades"> Habilidades </a> </li>
+            <li> <a class="nav-link" href="#Experiencialab"> Historial Experiencia Laboral </a>  </li>
+            
+        </div>
         
       </div>
+      <button type="button" class="btn btn-primary" id="boton"><i class="bi bi-moon" id="botonmodo"></i></button>
     </div>
+    
+  </nav>
+
   </div>
-</nav>
-</div>
+<!-- otra barra -->
 
 
 
-<!-- ======= Intro ======= -->
-<a name="Intro" />
+
+                                                   <!-- ======= Intro ======= -->
+
 <div class="ventana2">
   <div class="container">
     
     <div class="row">
       
-      <div class="col-lg-6 col-10 order-lg-2 order-2 " >
-        
-        <p class="textointro">Haciendo una descripción sencilla soy una persona activa, emprendedora, responsable, orientada al logro de resultados y a la resolución en las tareas asignadas.</p>
+      <div class="col-lg-7 col-10 order-lg-1 order-2 text-center " >
+        <a name="Intro" ></a>
+        <p class="textointro">Desarrollador FRONTEND</p>
+        <p class="textointro2">Me gusta crear productos frontend sólidos y escalables con excelentes experiencias de usuario</p>
         
       </div>
       
-      <div class="col-lg-4 col-10 order-lg-2 order-1 text-center align-middle">
+      <div class="col-lg-3 col-10 order-lg-2 order-1 text-center align-middle">
         <img class="imagenperson" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
       </div>
       
@@ -89,7 +102,7 @@
 </div>
 
 <!-- ======= Datos personales ======= -->
-<a name="DatosPersonales" />
+<a name="DatosPersonales" >
 <div class="ventana">
   <section class="container">
   <p class="ventanatexto">Datos Personales</p>
@@ -106,23 +119,8 @@
 
 </div>
 
-<!-- ======= Historial Academico ======= -->
-<a name="HistorialAcademico" >
-<div class="ventana2">
-  <section class="container">
-  <p class="ventanatexto2">Historial Academico </p>
-  <div class="row">
-    <div class="col-sm">
-      <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
-    </div>
 
-    <div class="col-sm">
-      <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
-    </div>
-  </div>
-</section>
 
-</div>
 
 
 
@@ -136,13 +134,14 @@
 
   <div class="container">
     <div class="row">
+      
       <div class="col-sm">
         <!--html-->
-        HTML
-        <img src="https://www.iconninja.com/files/921/873/84/html5-%E2%80%A2-html-icon.png" class="imagenicon" alt="imagen logo html"> 
+        Angular
+        <img src="https://www.iconninja.com/files/210/967/801/angular-web-web-technology-javascript-long-shadow-front-end-technologies-icon.png" class="imagenicon" alt="imagen logo Angular"> 
        
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+          <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="35">35%</div>
         </div>
       </div>
       <div class="col-sm">
@@ -153,8 +152,12 @@
           <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
         </div>
       </div>
-    </div>
   </div>
+  </div>
+
+
+
+
 
 
   <div class="container">
@@ -176,12 +179,86 @@
     </div>
   </div>
 
- 
+  
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        Wordpress
+        <img src="https://www.iconninja.com/files/856/737/165/wordpress-icon.png"  class="imagenicon"  alt="imagen logo worpress">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">55%</div>
+        </div>
+      </div>
+      <div class="col-sm">
+        HTML
+        <img src="https://www.iconninja.com/files/921/873/84/html5-%E2%80%A2-html-icon.png" class="imagenicon" alt="imagen logo html"> 
+       
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="ventanatexto">Lenguajes</p>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        Español
+        <img src="https://www.iconninja.com/files/275/177/212/spain-spanish-icon.png"  class="imagenicon"  alt="imagen logo worpress">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">55%</div>
+        </div>
+      </div>
+      <div class="col-sm">
+        Ingles
+        <img src="https://www.iconninja.com/files/1/311/633/united-america-usa-icon.png" class="imagenicon" alt="imagen logo html"> 
+       
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </section>
 
 </div>
 
 <script src="js/funciones.js" ></script>
+
+
+
+
+<!-- ======= Experiencia Laboral ======= -->
+<a name="Experiencialab" >
+  <div class="ventana">
+    <section class="container">
+    <p class="ventanatexto">Experiencia Laboral</p>
+    <div class="row">
+      <div class="col-sm">
+        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
+      </div>
+  
+      <div class="col-sm">
+        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
+      </div>
+    </div>
+  </section>
+  
+  </div>
+
+
+
+
+
 
 </body>
 </html>

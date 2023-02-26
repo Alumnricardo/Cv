@@ -7,10 +7,14 @@ let obscuro = false;
 document.addEventListener("click", function(){
     console.log("msj 001 bit");
   });
+
 */
+
+
+/* //////////////////////  FUNCION QUE CAMBIA CLASES PARA CREAR EL MODO OBSCURO ///////////////////////////////   */ 
   document.getElementById("boton").addEventListener("click", function(){
     
-    alert("Seleccionó modo Obscuro");
+    
     
     obscuro = !obscuro;
   console.log(obscuro);

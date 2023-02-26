@@ -7,12 +7,35 @@ body {
 
 
 .textointro{
+font-family: 'Roboto', sans-serif;
+font-family: 'Tilt Warp', cursive;
+text-align: center;
+font-size: 80px;
+text-shadow: 4px 6px 5px rgba(0,0,0,0.6);
+margin: auto;
+margin-left: 70px;
+margin-top: 50px;
+width: 50%;
+padding: 10px;
+animation-name: introletrasup;
+animation-duration: 5s;
+
+}
+
+
+.textointro2{
+ 
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin: auto;
+  margin-left: 70px;
+  margin-top: 50px;
   width: 50%;
   padding: 10px;
-}
+  animation-name: introletrasup2;
+  animation-duration: 2s;
+  
+  }
 
 .imagenicon{
   width: 50px;
@@ -25,6 +48,8 @@ body {
   width: 500px;
   height: 500px;
   float: center; 
+  box-shadow: 0px 0px 67px 8px rgba(0,0,0,0.39) inset;
+
   padding-right: 10px;
   animation-name: burbujaimg;
   animation-duration: 2s;
@@ -42,13 +67,12 @@ body {
   }
 
 .barramenu { 
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-background-color: #336AB0;
 width: 100%;
-height: 30px;
+height: 40px;
 margin-top: 0px;
-animation-name: introdifuminado;
-animation-duration: 2s;
+animation-name: intromenu;
+animation-duration: 1s;
+color: white;
 }
 
 
@@ -99,9 +123,12 @@ background-repeat: repeat;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
-  
+  padding-right: 0px;
   border-radius: 0px;
   color: white;
+
+
+
   }
 
 
@@ -175,13 +202,35 @@ li a {
 
 /* cambia forma de boton menu */
 li a:hover {
-  border-bottom: 4px solid white;
-   
+  border-bottom: 4px solid white;  
 }
+
+                                           /* INICIO ANIMACIONES*/
 
 @keyframes introdifuminado {
   from {filter: blur(1.5rem);}
   to {filter: blur(0);}
+}
+
+@keyframes intromenu {
+  0% { transform: translateY(-50px); opacity: 0%;}
+  100% { transform: translateY(0px); opacity: 100%; }
+}
+
+@keyframes introletrasup {
+  0% { transform: translateY(30px); opacity: 0%;}
+  100% { transform: translateY(0px); opacity: 100%; }
+}
+
+@keyframes introletrasup2 {
+  0% { transform: translateY(50px); opacity: 0%;}
+  100% { transform: translateY(0px); opacity: 100%; }
+}
+
+
+@keyframes estiramientovertical {
+  from {max-height: 0%;}
+  to {max-height: 1000%;}
 }
 
 @keyframes estiramiento {
@@ -191,10 +240,10 @@ li a:hover {
 
 @keyframes burbujaimg {
   
-  from { opacity: 0%;}
-  to {opacity: 100%;}
+  0% { transform: translateX(120px); opacity: 0%;}
+  100% { transform: translateX(0px); opacity: 100%; }
 }
-
+                                                      /* FIN ANIMACIONES */
 
 @media only screen and (max-width: 600px) {
   body {
@@ -228,7 +277,17 @@ li a:hover {
     margin: auto;
     width: 80%;
     padding: 10px;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
   }
 
+  .textointro2{
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+  }
 
 }
