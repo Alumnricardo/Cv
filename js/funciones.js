@@ -40,7 +40,7 @@ for (let i = 0; i < collection.length; i++) {
     }
     
   
-    
+    document.getElementById("tablita").className="table table-striped table-dark";
     
     
     
@@ -66,7 +66,7 @@ for (let i = 0; i < collection.length; i++) {
         collection2[i].className = "ventana2";
          }
     
-    
+         document.getElementById("tablita").className="table table-striped table-light";
 
 
     
