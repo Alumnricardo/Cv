@@ -158,7 +158,10 @@ background-repeat: repeat;
 
 
 .ventana { 
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+  box-shadow: 1px 1px 118px -52px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 1px 1px 118px -52px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 1px 1px 118px -52px rgba(0,0,0,0.75) inset;
   background-color: white;
   animation-name: estiramiento;
   animation-duration: 2s;
@@ -173,6 +176,7 @@ background-repeat: repeat;
   
   }
 
+  
 
 
 ul {

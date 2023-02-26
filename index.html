@@ -62,13 +62,45 @@
             <li> <a class="nav-link" href="#DatosPersonales"> Datos Personales </a> </li>
             <li> <a class="nav-link" href="#Habilidades"> Habilidades </a> </li>
             <li> <a class="nav-link" href="#Experiencialab"> Historial Experiencia Laboral </a>  </li>
-            
+            <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" id="botoninfo" data-bs-toggle="modal" data-bs-target="#myModal">
+  <i class="bi bi-info-circle-fill"></i>
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h6 class="ventanatexto">Sitio Web desarrollado por Cabrera Ricardo</h6>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <p class="text-dark"> SitioWeb desarrollado para Curso Front end Argentina programa 4.0 </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-primary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
         </div>
         
       </div>
       <button type="button" class="btn btn-primary" id="boton"><i class="bi bi-moon" id="botonmodo"></i></button>
+       
     </div>
     
+ 
+
+
   </nav>
 
   </div>
@@ -103,9 +135,9 @@
 
 <!-- ======= Datos personales ======= -->
 <a name="DatosPersonales" >
-<div class="ventana">
+<div class="ventana" id="v1">
   <section class="container">
-  <p class="ventanatexto">Datos Personales</p>
+  <p class="ventanatexto" id="t1">Datos Personales</p>
   <div class="row">
     <div class="col-sm">
       <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
@@ -127,10 +159,10 @@
 
 <!-- ======= Habilidades ======= -->
 <a name="Habilidades" >
-<div class="ventana">
+<div class="ventana" id="v2">
 <section class="container">
 
-  <p class="ventanatexto">Habilidades</p>
+  <p class="ventanatexto" id="t2">Habilidades</p>
 
   <div class="container">
     <div class="row">
@@ -188,7 +220,7 @@
         Wordpress
         <img src="https://www.iconninja.com/files/856/737/165/wordpress-icon.png"  class="imagenicon"  alt="imagen logo worpress">
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">55%</div>
+          <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
         </div>
       </div>
       <div class="col-sm">
@@ -239,20 +271,32 @@
 
 <!-- ======= Experiencia Laboral ======= -->
 <a name="Experiencialab" >
-  <div class="ventana">
-    <section class="container">
-    <p class="ventanatexto">Experiencia Laboral</p>
-    <div class="row">
-      <div class="col-sm">
-        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
-      </div>
-  
-      <div class="col-sm">
-        <img class="figure-img img-fluid rounded" src="https://randomuser.me/api/portraits/men/79.jpg" alt="Imagen de persona cv" >
-      </div>
+  <div class="ventana" id="v3">
+    <div class="container mt-3">
+      <h2 class="ventanatexto" id="t3">Trabajador en relación de dependencia</h2>
+                 
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nombre Empresa</th>
+            <th>Cargo</th>
+            <th>Periodo</th>
+            <th>Contacto empresa</tr>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Empresa 1</td>
+            <td>Operario</td>
+            <td>2012-2015</td>
+            <td>john@example.com</td>
+          </tr>
+          
+
+          
+        </tbody>
+      </table>
     </div>
-  </section>
-  
   </div>
 
 
