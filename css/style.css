@@ -297,6 +297,10 @@ li a {
   transition-delay: 0s;
 }
 
+#tablita{
+
+}
+
 /* cambia forma de boton menu */
 li a:hover {
   border-bottom: 4px solid white;  
@@ -348,6 +352,13 @@ li a:hover {
 }
                                                       /* FIN ANIMACIONES */
 
+@media only screen and (max-width: 500px) {
+#tablita{
+  
+  font-size: 5px;
+}
+}
+
 @media only screen and (max-width: 950px) {
   body {
     background-color: lightblue;
@@ -377,7 +388,7 @@ li a:hover {
   .imagenperson2{
     width: 300px;
     height:300px;
-    margin-left: 15%;
+    
     
   }
 
