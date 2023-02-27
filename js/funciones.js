@@ -19,6 +19,8 @@ document.addEventListener("click", function(){
 document.body.style.backgroundColor = "#282828";
 
 
+document.getElementById("datpers").style.color = "white";
+
 document.getElementById("v1").style.backgroundColor = "#282828";
 document.getElementById("v2").style.backgroundColor = "#282828";
 document.getElementById("v3").style.backgroundColor = "#282828";
@@ -41,7 +43,7 @@ for (let i = 0; i < collection.length; i++) {
     
   
     document.getElementById("tablita").className="table table-striped table-dark";
-    
+    document.getElementById("footer").className = "footer2";
     
     
     
@@ -54,9 +56,12 @@ for (let i = 0; i < collection.length; i++) {
     document.getElementById("v2").style.backgroundColor = "white";
     document.getElementById("v3").style.backgroundColor = "white";
 
+    document.getElementById("datpers").style.color = "black";
+
     document.getElementById("t1").style.color = "#236CC4";
     document.getElementById("t2").style.color = "#236CC4";
     document.getElementById("t3").style.color = "#236CC4";
+    
 
     document.getElementById("barra").className = "navbar navbar-expand-lg navbar-dark bg-primary";
     document.getElementById("boton").className = "btn btn-primary";
@@ -68,7 +73,7 @@ for (let i = 0; i < collection.length; i++) {
     
          document.getElementById("tablita").className="table table-striped table-light";
 
-
+         document.getElementById("footer").className = "footer";
     
  }
     

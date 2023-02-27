@@ -48,13 +48,39 @@ animation-duration: 5s;
   width: 500px;
   height: 500px;
   float: center; 
-  box-shadow: 0px 0px 67px 8px rgba(0,0,0,0.39) inset;
-
   padding-right: 10px;
   animation-name: burbujaimg;
   animation-duration: 2s;
   place-items: center;
 
+  
+}
+
+.imagenperson2{
+  width: 500px;
+  height:500px;
+  
+  border: 5px solid #ffffff;
+  animation-name: burbujaimg2;
+  animation-duration: 2s;
+  place-items: center;
+  box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  
+  
+  
+  
+  
+}
+
+.textperson{
+  
+  animation-name: burbujaimg2;
+  animation-duration: 2s;
+  box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
   
 }
 
@@ -177,7 +203,57 @@ background-repeat: repeat;
   }
 
   
+  .footer { 
+    box-shadow: -2px 15px 29px -1px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: -2px 15px 29px -1px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: -2px 15px 29px -1px rgba(0,0,0,0.75) inset;
+    
+    background-color: #0065fc;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #0d6efd 25%, transparent 25%), linear-gradient(225deg, #0d6efd 25%, transparent 25%), linear-gradient(45deg, #0d6efd 25%, transparent 25%), linear-gradient(315deg, #0d6efd 25%, #0065fc 25%);
+  background-position:  4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+    
+    
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 0px;
+    border-radius: 0px;
+    color: white;
+  
+  
+  
+    }
 
+
+    .footer2 { 
+      box-shadow:inset rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      
+      background-color: #1c1c1c;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #000000 25%, transparent 25%), linear-gradient(225deg, #000000 25%, transparent 25%), linear-gradient(45deg, #000000 25%, transparent 25%), linear-gradient(315deg, #000000 25%, #1c1c1c 25%);
+  background-position:  4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+      
+      
+      width: 100%;
+      height: 200px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      
+      border-radius: 0px;
+      color: white;
+      }
 
 ul {
   width: 100%;
@@ -247,9 +323,15 @@ li a:hover {
   0% { transform: translateX(120px); opacity: 0%;}
   100% { transform: translateX(0px); opacity: 100%; }
 }
+
+@keyframes burbujaimg2 {
+  
+  0% { transform: translateX(-120px); opacity: 0%;}
+  100% { transform: translateX(0px); opacity: 100%; }
+}
                                                       /* FIN ANIMACIONES */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
   body {
     background-color: lightblue;
   }
@@ -275,9 +357,16 @@ li a:hover {
     
   }
 
+  .imagenperson2{
+    width: 300px;
+    height:300px;
+    margin-left: 15%;
+    
+  }
+
   .textointro{
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
     margin: auto;
     width: 80%;
     padding: 10px;
